@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Showroom Công Nghệ</title>
+    <style>
+      /* CSS Định dạng cơ bản */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+      }
+
+      /* CSS cho thanh Navbar */
+      .navbar {
+        background-color: #0056b3;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .menu a:hover {
+        color: #ffc107;
+      }
+
+      /* CSS cho thanh tìm kiếm */
+      .search-box {
+        display: flex;
+      }
+      .search-box input {
+        padding: 8px 12px;
+        border-radius: 4px 0 0 4px;
+        border: none;
+        outline: none;
+        width: 200px;
+      }
+      .search-box button {
+        padding: 8px 15px;
+        background-color: #ffc107;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .search-box button:hover {
+        background-color: #e0a800;
+      }
+
+      /* Vùng chứa nội dung chính */
+      .container {
+        padding: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* --- TÔI THÊM CLASS NÀY ĐỂ BẠN CHIA LƯỚI SẢN PHẨM --- */
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      /* CSS cho từng ô sản phẩm */
+      .product-card {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        margin-bottom: 15px;
+      }
+      .product-card h3 {
+        font-size: 16px;
+        color: #333;
+        margin: 0 0 10px 0;
+      }
+      .product-card .price {
+        color: #d9534f;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+      }
+      .product-card .desc {
+        font-size: 13px;
+        color: #666;
+        height: 40px;
+        overflow: hidden;
+      }
+      .product-card button {
+        background-color: #0056b3;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      .product-card button:hover {
+        background-color: #004494;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="menu">
+        <a href="index.php">HOME</a>
+        <a href="dienthoai.php">ĐIỆN THOẠI</a>
+        <a href="laptop.php">LAPTOP</a>
+        <a href="tablet.php">TABLET</a>
+        <a href="about.html">ABOUT US</a>
+      </div>
+
+      <form class="search-box" action="index.php" method="GET">
+        <input type="text" name="search" placeholder="Tìm sản phẩm..." />
+        <button type="submit">Tìm kiếm</button>
+      </form>
+    </div>
+
+    <div class="container"></div>
+  </body>
+</html>

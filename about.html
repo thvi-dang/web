@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Về Chúng Tôi - Showroom Công Nghệ</title>
+    <style>
+      /* CSS dùng chung cho Navbar (giống hệt file header) */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+      }
+      .navbar {
+        background-color: #0056b3;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .menu a:hover {
+        color: #ffc107;
+      }
+      .search-box {
+        display: flex;
+      }
+      .search-box input {
+        padding: 8px 12px;
+        border-radius: 4px 0 0 4px;
+        border: none;
+        outline: none;
+        width: 200px;
+      }
+      .search-box button {
+        padding: 8px 15px;
+        background-color: #ffc107;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .search-box button:hover {
+        background-color: #e0a800;
+      }
+
+      /* CSS riêng để trang trí phần nội dung giới thiệu */
+      .container {
+        padding: 40px;
+        max-width: 800px;
+        margin: 40px auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        line-height: 1.6;
+        color: #333;
+      }
+      h1 {
+        color: #0056b3;
+        text-align: center;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+      }
+      .contact-box {
+        margin-top: 30px;
+        padding: 20px;
+        background: #e9ecef;
+        border-left: 5px solid #0056b3;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="menu">
+        <a href="index.php">HOME</a>
+        <a href="index.php?category=dien-thoai">ĐIỆN THOẠI</a>
+        <a href="index.php?category=laptop">LAPTOP</a>
+        <a href="index.php?category=tablet">TABLET</a>
+        <a href="about.html">ABOUT US</a>
+      </div>
+      <form class="search-box" action="index.php" method="GET">
+        <input type="text" name="search" placeholder="Tìm sản phẩm..." />
+        <button type="submit">Tìm kiếm</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <h1>Về Chúng Tôi</h1>
+
+      <p>
+        Chào mừng bạn đến với <strong>Showroom Công Nghệ</strong> - điểm đến tin
+        cậy cho những tín đồ yêu thích thiết bị điện tử. Chúng tôi tự hào mang
+        đến cho khách hàng những sản phẩm chính hãng, cập nhật xu hướng mới nhất
+        với mức giá cực kỳ cạnh tranh.
+      </p>
+
+      <h3>Sản phẩm chủ lực:</h3>
+      <ul>
+        <li>
+          <strong>Điện thoại:</strong> Cập nhật các mẫu Flagship và tầm trung
+          mới nhất.
+        </li>
+        <li>
+          <strong>Laptop:</strong> Đa dạng từ dòng học tập - văn phòng đến
+          Laptop Gaming cấu hình khủng.
+        </li>
+        <li>
+          <strong>Tablet:</strong> Các dòng máy tính bảng phục vụ giải trí và
+          thiết kế đồ họa.
+        </li>
+      </ul>
+
+      <div class="contact-box">
+        <h3>Thông Tin Liên Hệ</h3>
+        <p>
+          📍 <strong>Địa chỉ:</strong> Đường 3/2, Quận Ninh Kiều, TP. Cần Thơ
+        </p>
+        <p>📞 <strong>Hotline:</strong> 0909 123 456</p>
+        <p>✉️ <strong>Email:</strong> hotro@showroomcongnghe.vn</p>
+        <p>
+          ⏰ <strong>Giờ mở cửa:</strong> 8:00 - 21:30 (Tất cả các ngày trong
+          tuần)
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
